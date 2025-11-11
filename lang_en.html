@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History of computing</title>
+    <link rel="stylesheet" href="style/Style.css">
+    <script src="data.js" defer></script>
+</head>
+<body>
+<nav>
+    <div class="lang">
+        <a href="index.html">UA</a>
+        <a href="lang_en.html">EN</a>
+    </div>
+</nav>
+<div id="infoOfDay"></div>
+<h1>History of computing</h1>
+<p>The history of computing is a journey from the first mechanical devices to modern computers.
+    In Ancient Greece, the Antikythera mechanism was created (1st century BC), which is recognized as the first analog computer.
+    In the 17th century, the first mechanical calculating machines of Pascal and Leibniz appeared.
+    Modern technology is based on electronic and digital technologies that provide rapid processing of large amounts of data.</p>
+
+<img src="images/Computers.png" width="600" height="300" alt="Comps"
+     class="thumb" onmouseover="enlarge(this)" onmouseout="shrink(this)">
+<footer>
+    <h2>The main stages of the development of computer technology</h2>
+
+    <ul class="stages">
+        <li><a href="/etaps/Etap1.html">First stage</a></li>
+        <li><a href="etaps/Etap2.html">Second stage</a></li>
+        <li><a href="etaps/Etap3.html">Third stage</a></li>
+        <li><a href="etaps/Etap4.html">Fourth stage</a></li>
+        <li><a href="etaps/Etap5.html">Fifth stage</a></li>
+        <li><a href="etaps/Etap6.html">Sixth stage</a></li>
+        <li><a href="etaps/Etap7.html">Seventh stage</a></li>
+        <li><a href="etaps/Etap8.html">Eightth stage</a></li>
+        <li><a href="etaps/conclusion.html">Conclusion</a></li>
+    </ul>
+</footer>
+
+<div class="left">
+    <video src="videos/history_of_comps.mp4" controls></video>
+</div>
+<p>If your browser does not support HTML5 video, use
+    <a href="https://youtu.be/V1zZo6KNN3g?si=KRHAWIt668PNQGTT">link</a>.
+</p>
+<h2>Math operations</h2>
+<label>Number A: <input id="a" type="number" value=""></label>
+<label>Number B: <input id="b" type="number" value=""></label>
+<button onclick="doMath()">count</button>
+
+<h2>Choose picture</h2>
+<form id="imgForm">
+    <label><input type="radio" name="choice" value="BAller.jpg">1</label>
+    <label><input type="radio" name="choice" value="kompik.jpg">2</label>
+    <label><input type="radio" name="choice" value="oldcomp.jpg">3</label>
+    <label><input type="radio" name="choice" value="Computers.png">4</label>
+    <label><input type="radio" name="choice" value="anothercomp.jpeg">5</label>
+    <button type="button" onclick="showSelectedImage()">Show image</button>
+</form>
+
+<h2>Go to another page</h2>
+<form>
+    <select onchange="goToPage(this.value)">
+        <option value="">Choose language</option>
+        <option value="index.html">UA</option>
+        <option value="lang_en.html">EN</option>
+    </select>
+</form>
+
+<footer>
+    <h3>&copy; Solovian Oleksandr. Not all rights are reserved.</h3>
+    <a href="/terms">Terms of use</a>
+    <a href="/privacy">Privacy Policy</a>
+</footer>
+</body>
+</html>

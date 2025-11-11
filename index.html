@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Історія обчислювальної техніки</title>
+    <link rel="stylesheet" href="style/Style.css">
+    <script src="data.js" defer></script>
+</head>
+<body>
+<nav>
+<div class="lang">
+    <a href="index.html">UA</a>
+    <a href="lang_en.html">EN</a>
+</div>
+</nav>
+<div id="infoOfDay"></div>
+<h1>Історія обчислювальної техніки</h1>
+<p>Історія обчислювальної техніки — це шлях від перших механічних пристроїв до сучасних комп’ютерів.
+У Давній Греції створили Антикитерський механізм (І ст. до н.е.), який вважається першим аналоговим комп’ютером.
+У XVII ст. з’явилися перші механічні лічильні машини Паскаля та Лейбніца.
+Сучасна техніка базується на електронних і цифрових технологіях, що забезпечують швидке опрацювання великих обсягів даних.</p>
+
+<img src="images/Computers.png" width="600" height="300" alt="Comps"
+     class="thumb" onmouseover="enlarge(this)" onmouseout="shrink(this)">
+<footer>
+<h2>Основні етапи розвитку комп'ютерної техніки</h2>
+
+<ul class="stages">
+    <li><a href="/etaps/Etap1.html">Перший етап</a></li>
+    <li><a href="etaps/Etap2.html">Другий етап</a></li>
+    <li><a href="etaps/Etap3.html">Третій етап</a></li>
+    <li><a href="etaps/Etap4.html">Четвертий етап</a></li>
+    <li><a href="etaps/Etap5.html">П'ятий етап</a></li>
+    <li><a href="etaps/Etap6.html">Шостий етап</a></li>
+    <li><a href="etaps/Etap7.html">Сьомий етап</a></li>
+    <li><a href="etaps/Etap8.html">Восьмий етап</a></li>
+    <li><a href="etaps/conclusion.html">Підсумок</a></li>
+</ul>
+</footer>
+
+<div class="left">
+    <video src="videos/history_of_comps.mp4" controls></video>
+</div>
+<p>Якщо ваш браузер не підтримує HTML5 відео, скористайтесь
+    <a href="https://youtu.be/V1zZo6KNN3g?si=KRHAWIt668PNQGTT">посиланням</a>.
+</p>
+<h2>Математичні операції</h2>
+<label>Число A: <input id="a" type="number" value=""></label>
+<label>Число B: <input id="b" type="number" value=""></label>
+<button onclick="doMath()">Обчислити</button>
+
+<h2>Виберіть зображення</h2>
+<form id="imgForm">
+    <label><input type="radio" name="choice" value="BAller.jpg">1</label>
+    <label><input type="radio" name="choice" value="kompik.jpg">2</label>
+    <label><input type="radio" name="choice" value="oldcomp.jpg">3</label>
+    <label><input type="radio" name="choice" value="Computers.png">4</label>
+    <label><input type="radio" name="choice" value="anothercomp.jpeg">5</label>
+    <button type="button" onclick="showSelectedImage()">Показати</button>
+</form>
+
+<h2>Перехід на іншу сторінку</h2>
+<form>
+    <select onchange="goToPage(this.value)">
+        <option value="">Оберіть мову</option>
+        <option value="index.html">UA</option>
+        <option value="lang_en.html">EN</option>
+    </select>
+</form>
+
+<footer>
+    <h3>&copy; Solovian Oleksandr. Всі права ще не захищені.</h3>
+    <a href="/terms">Умови використання</a>
+    <a href="/privacy">Політика конфіденційності</a>
+</footer>
+</body>
+</html>
+
